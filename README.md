@@ -1,5 +1,5 @@
 # print n' play scripts
-Easily transforming files with tons of cards into pages of printable A4
+Transform files with tons of cards into pages of ready-to-print A4
 
 ![](./process.png)
 
