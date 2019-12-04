@@ -1,4 +1,6 @@
-# print_n_play_scripts
+![](./process.png)
+
+# print n' play scripts
 Easily transforming files with tons of cards into pages of printable A4
 
 ## Usage
