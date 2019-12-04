@@ -2,6 +2,7 @@
     "a4_pix": [2480, 3508],
     "a4_dim": [210, 297],
     "outputPath": "data\\exported\\",
+    "save_as_pdf": true,
     "card_files": [
         {
             "name": "characters",

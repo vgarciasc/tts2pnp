@@ -5,6 +5,7 @@ import resize
 import resize_a4
 import crop_cards
 import composite
+import pdf_finish
 import utils
 
 if __name__ == "__main__":
@@ -12,6 +13,7 @@ if __name__ == "__main__":
         data = json.load(f)
 
     card_files = data['card_files']
+    pdf_pages = []
 
     for group in card_files:
         cards = []
@@ -26,9 +28,16 @@ if __name__ == "__main__":
             for i in range(0, int(cdata['instances'])):
                 cards.extend(cropped_cards)
         
-        pages = composite.composite(cards, group['card_dim'], data['a4_dim'], data['a4_pix'], group['margin_mm'], group['padding_mm'], group['rotate'], group['bestFit'])
+        images = composite.composite(cards, group['card_dim'], data['a4_dim'], data['a4_pix'], group['margin_mm'], group['padding_mm'], group['rotate'], group['bestFit'])
+        pdf_pages.extend(images)
 
-        for i in range(0, len(pages)):
-            pagename = data['outputPath'] + group['name'] + "_" + str(i) + ".png" 
-            pages[i].save(pagename)
+        if not data['save_as_pdf']:
+            for i in range(0, len(images)):
+                imagename = data['outputPath'] + group['name'] + "_" + str(i) + ".png" 
+                images[i].save(imagename)
+    
+    if data['save_as_pdf']:
+        pdf_filename = data['outputPath'] + data['game'] + ".pdf"
+        pdf_finish.save_images_as_pdf(pdf_pages, pdf_filename)
+
 
