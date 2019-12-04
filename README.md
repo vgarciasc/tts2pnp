@@ -1,7 +1,7 @@
-![](./process.png)
-
 # print n' play scripts
 Easily transforming files with tons of cards into pages of printable A4
+
+![](./process.png)
 
 ## Usage
 Put your images in `data` folder and edit `files.json` accordingly. Then, just run `script.py`.
