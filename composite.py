@@ -1,11 +1,20 @@
 import sys
+import math
 import utils
 import crop_cards
 from PIL import Image
 
 BG_COLOR = (255, 255, 255, 255)
 
-def composite(cards, card_dim, a4_dim, a4_pix, margin_mm, padding_mm):
+def composite(cards, card_dim, a4_dim, a4_pix, margin_mm, padding_mm, rotate=False, bestFit=False):
+    if bestFit:
+        fit_rotate_0 = math.floor(a4_dim[0] / card_dim[0]) * math.floor(a4_dim[1] / card_dim[1])
+        fit_rotate_1 = math.floor(a4_dim[0] / card_dim[1]) * math.floor(a4_dim[1] / card_dim[0])
+        rotate = fit_rotate_1 > fit_rotate_0
+    if rotate:
+        cards = [card.rotate(90, expand=True) for card in cards]
+        card_dim = card_dim[::-1]
+    
     im_out = Image.new('RGBA', a4_pix, BG_COLOR)
     output = []
 

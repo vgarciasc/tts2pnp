@@ -1,42 +1,57 @@
 {
     "a4_pix": [2480, 3508],
     "a4_dim": [210, 297],
+    "outputPath": "data\\exported\\",
     "card_files": [
-        [
-            {
-                "filename": "data\\characters1.png",
-                "card_count": [5, 5],
-                "card_dim": [63, 88],
-                "maintain_w_or_h": 1,
-                "margin_mm": [10, 10],
-                "padding_mm": [2, 2]
-            },
-            {
-                "filename": "data\\characters2.png",
-                "card_count": [5, 5],
-                "card_dim": [63, 88],
-                "maintain_w_or_h": 1,
-                "margin_mm": [10, 10],
-                "padding_mm": [2, 2]
-            }
-        ],
-        [
-            {
-                "filename": "data\\enemies1.png",
-                "card_count": [6, 6],
-                "card_dim": [63, 88],
-                "maintain_w_or_h": 1,
-                "margin_mm": [10, 10],
-                "padding_mm": [2, 2]
-            },
-            {
-                "filename": "data\\enemies2.png",
-                "card_count": [6, 6],
-                "card_dim": [63, 88],
-                "maintain_w_or_h": 1,
-                "margin_mm": [10, 10],
-                "padding_mm": [1, 1]
-            }
-        ]
+        {
+            "name": "characters",
+            "rotate": false,
+            "bestFit": true,
+            "margin_mm": [10, 10],
+            "padding_mm": [1, 1],
+            "card_dim": [93, 140],
+            "fileData": [
+                {
+                    "filename": "data\\characters_back.png",
+                    "card_count": [1, 1],
+                    "instances": 50,
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\characters1.png",
+                    "card_count": [5, 5],
+                    "instances": 1,
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\characters2.png",
+                    "card_count": [5, 5],
+                    "instances": 1,
+                    "maintain_w_or_h": 1
+                }
+            ]
+        },
+        {
+            "name": "equipments",
+            "rotate": false,
+            "bestFit": true,
+            "margin_mm": [5, 5],
+            "padding_mm": [0, 0],
+            "card_dim": [63, 88],
+            "fileData": [
+                {
+                    "filename": "data\\equipments_back.png",
+                    "card_count": [1, 1],
+                    "instances": 36,
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\equipments1.png",
+                    "card_count": [6, 6],
+                    "instances": 1,
+                    "maintain_w_or_h": 1
+                }
+            ]
+        }
     ]
 }
