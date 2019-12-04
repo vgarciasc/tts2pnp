@@ -10,8 +10,10 @@ Put your images in `data` folder and edit `files.json` accordingly. Then, just r
 
 These are the settings configurable in `files.json`:
 
+- `game`: the name of the game. Relevant when saving as PDF.
 - `a4_pix`: the size (in pixels) of the final A4 file that you want. All final files will have these dimensions. Should be proportional to `a4_dim`. Example: `[2480, 3508]`.
 - `a4_dim`: the size (in millimeters) of an A4 paper. Trivially the value is `[210, 297]`, but you may want to change this if printing in another kind of paper.
+- `save_as_pdf`: boolean. If true, will save the results in a single PDF; otherwise, as a series of PNG images. **Warning: saving a PDF with lots of heavy files may slow down your computer.**
 - `output_path`: the folder in which the processed files will be exported, relative to current path. Example: `data/exported`.
 - `card_files`: array with information pertaining to groups of files.
   - `name`: name of the group of files. This will be used in the saving step: if `name` is "characters", then the exported files will be "characters_0.png", "characters_1.png", etc.
