@@ -1,0 +1,42 @@
+{
+    "a4_pix": [2480, 3508],
+    "a4_dim": [210, 297],
+    "card_files": [
+        [
+            {
+                "filename": "data\\characters1.png",
+                "card_count": [5, 5],
+                "card_dim": [63, 88],
+                "maintain_w_or_h": 1,
+                "margin_mm": [10, 10],
+                "padding_mm": [2, 2]
+            },
+            {
+                "filename": "data\\characters2.png",
+                "card_count": [5, 5],
+                "card_dim": [63, 88],
+                "maintain_w_or_h": 1,
+                "margin_mm": [10, 10],
+                "padding_mm": [2, 2]
+            }
+        ],
+        [
+            {
+                "filename": "data\\enemies1.png",
+                "card_count": [6, 6],
+                "card_dim": [63, 88],
+                "maintain_w_or_h": 1,
+                "margin_mm": [10, 10],
+                "padding_mm": [2, 2]
+            },
+            {
+                "filename": "data\\enemies2.png",
+                "card_count": [6, 6],
+                "card_dim": [63, 88],
+                "maintain_w_or_h": 1,
+                "margin_mm": [10, 10],
+                "padding_mm": [1, 1]
+            }
+        ]
+    ]
+}
