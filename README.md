@@ -37,7 +37,7 @@ For the first example, we'll use the reskin made by Konstantin Sokolov ([kotdesi
 
 The cards will need to be unstretched and separated across multiple PDF pages. The script will take care of that for us. This is the corresponding `files.json`:
 
-```json
+```jsonc
 {
     "game": "love letter",
     "a4_pix": [2480, 3508],
@@ -70,7 +70,7 @@ For our second example, we'll use the same Love Letter reskin cards, but in a di
 
 ![](.//love_letter_reskin_2.png)
 
-As per the first example, in Love Letter there are 8 different cards, but some of them appear more than once. These are their frequencies:
+As seen in the first example, in Love Letter there are 8 different cards, but some of them appear more than once. These are their frequencies:
 
 1. Princess: 1
 2. Countess: 1
@@ -83,7 +83,7 @@ As per the first example, in Love Letter there are 8 different cards, but some o
 
 With that in mind, this is the corresponding JSON:
 
-```json
+```jsonc
 {
     "game": "love letter",
     "a4_pix": [2480, 3508],
