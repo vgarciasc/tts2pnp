@@ -1,55 +1,70 @@
 {
+    "game": "love letter",
     "a4_pix": [2480, 3508],
     "a4_dim": [210, 297],
     "outputPath": "data\\exported\\",
     "save_as_pdf": true,
     "card_files": [
         {
-            "name": "characters",
+            "name": "cards",
             "rotate": false,
             "bestFit": true,
             "margin_mm": [10, 10],
             "padding_mm": [1, 1],
-            "card_dim": [93, 140],
-            "fileData": [
-                {
-                    "filename": "data\\characters_back.png",
-                    "card_count": [1, 1],
-                    "instances": 50,
-                    "maintain_w_or_h": 1
-                },
-                {
-                    "filename": "data\\characters1.png",
-                    "card_count": [5, 5],
-                    "instances": 1,
-                    "maintain_w_or_h": 1
-                },
-                {
-                    "filename": "data\\characters2.png",
-                    "card_count": [5, 5],
-                    "instances": 1,
-                    "maintain_w_or_h": 1
-                }
-            ]
-        },
-        {
-            "name": "equipments",
-            "rotate": false,
-            "bestFit": true,
-            "margin_mm": [5, 5],
-            "padding_mm": [0, 0],
             "card_dim": [63, 88],
             "fileData": [
                 {
-                    "filename": "data\\equipments_back.png",
-                    "card_count": [1, 1],
-                    "instances": 36,
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[7, 7]],
+                    "instances": 1,
                     "maintain_w_or_h": 1
                 },
                 {
-                    "filename": "data\\equipments1.png",
-                    "card_count": [6, 6],
-                    "instances": 1,
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[6, 6]],
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[5, 5]],
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[4, 4]],
+                    "instances": 2,
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[3, 3]],
+                    "instances": 2,
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[2, 2]],
+                    "instances": 2,
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[1, 1]],
+                    "instances": 2,
+                    "maintain_w_or_h": 1
+                },
+                {
+                    "filename": "data\\love_letter_reskin_2.png",
+                    "card_count": [3, 3],
+                    "select": [[0, 0]],
+                    "instances": 5,
                     "maintain_w_or_h": 1
                 }
             ]

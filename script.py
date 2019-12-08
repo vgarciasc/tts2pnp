@@ -25,8 +25,18 @@ if __name__ == "__main__":
             im = resize_a4.resize_a4(im, cdata['card_count'], group['card_dim'], data['a4_dim'], data['a4_pix'])
             cropped_cards = crop_cards.crop_cards(im, cdata['card_count'], group['card_dim'], data['a4_dim'], data['a4_pix'])
             
-            for i in range(0, int(cdata['instances'])):
-                cards.extend(cropped_cards)
+            selected_cards = []
+            if 'select' in cdata:
+                for select_range in cdata['select']:
+                    start_ix = select_range[0]
+                    end_ix = select_range[1]
+                    selected_cards.extend(cropped_cards[start_ix:(end_ix+1)])
+            else:
+                selected_cards.extend(cropped_cards)
+
+            instances = int(cdata['instances']) if 'instances' in cdata else 1
+            for i in range(0, instances):
+                cards.extend(selected_cards)
         
         images = composite.composite(cards, group['card_dim'], data['a4_dim'], data['a4_pix'], group['margin_mm'], group['padding_mm'], group['rotate'], group['bestFit'])
         pdf_pages.extend(images)
