@@ -3,7 +3,15 @@ Transform files with tons of cards into ready-to-print A4
 
 ![](./process.png)
 
+## Dependencies
+
+You must have [Pillow](https://pillow.readthedocs.io/en/stable/index.html) module installed. You can install it with `pip` by simply running:
+```
+python -m pip install Pillow
+```
+
 ## Usage
+
 Put your images in `data` folder and edit `files.json` accordingly. Then, just run `script.py`.
 
 ## Settings
