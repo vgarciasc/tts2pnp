@@ -1,5 +1,5 @@
 # tts2pnp
-Transform files with tons of cards (such as TTS images) into ready-to-print A4
+Transform files with tons of cards (such as Tabletop Simulator internal images) into ready-to-print A4 PDFs!
 
 ![](./process.png)
 
